@@ -1,0 +1,95 @@
+/* carouselQuoteIndicators styles */
+.carousel-quote-styles {
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 14px;
+    width: 85%;
+}
+
+@media screen and (max-width: 410px) {
+    .carousel-quote-styles {
+        min-height: 220px;
+    }
+}
+
+@media screen and (min-width: 411px) {
+    .carousel-quote-styles {
+        height: 180px;
+    }
+}
+
+@media screen and (min-width: 576px) {
+    .carousel-quote-styles {
+        height: 160px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .carousel-quote-styles {
+        height: 200px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .carousel-quote-styles {
+        /* height: 150px; */
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .carousel-quote-styles {
+        height: 180px;
+    }
+}
+
+
+.carousel-indicators {
+    position: relative;
+    top: 10px;
+}
+
+.carousel-indicators li {
+    background-color: #e2e2e2;
+}
+
+.carousel-indicators .active {
+    background-color: #686868;
+}
+
+.carousel-control-next {
+    height: 20px;
+    right: -22px;
+    top: 35%;
+}
+
+.carousel-control-prev {
+    height: 20px;
+    left: -22px;
+    top: 35%;
+}
+
+.carousel-control-prev-icon {
+    background-image: none;
+}
+
+.carousel-control-next-icon {
+    background-image: none;
+
+}
+
+.carousel-control-next-icon:before,
+.carousel-control-prev-icon:before {
+    font-family: 'FontAwesome';
+    color:#686868;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 28px;
+}
+
+.carousel-control-prev-icon:before {
+    content: "\f104";
+}
+
+.carousel-control-next-icon:before {
+    content: "\f105";
+}

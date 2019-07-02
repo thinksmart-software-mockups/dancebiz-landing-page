@@ -1,0 +1,29 @@
+h1, h2, h3, h4, h5 {
+    /* color: #e566bd; */
+    /* color: rgb(96,3,75); */
+    color: #810f57;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+}
+
+p, ul, li, label, a, div {
+    font-family: 'Roboto', sans-serif;
+    color: #282828;
+    font-weight: 300;
+}
+
+.container {
+    max-width: 960px;
+}
+
+/* */
+
+/* miscellaneous styles temporary*/
+.placeholder-bg-color {
+    /* background-color: lightpink; */
+    background-color: #fff;
+}
+
+.placeholder-image {
+    width: 100%
+}

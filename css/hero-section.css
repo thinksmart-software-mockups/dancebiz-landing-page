@@ -1,0 +1,160 @@
+/*******************************************************************/
+/* hero items */
+
+.hero-md-styles {
+    display: none;
+}
+
+/* hero mobile styles */
+@media screen and (max-width: 575px) {
+    .dancebiz-hero-image-mobile {
+        max-width: 300px;
+        margin: 0 auto -20px auto;
+        padding-top: 90px;
+    }
+
+    .hero-mobile-heading {
+        font-size: 22px;
+    }
+
+
+    .hero-mobile-text {
+        padding-top: 30px;
+    }
+}
+
+@media screen and (min-device-width: 576px) and (max-device-width: 767px) { 
+
+    .dancebiz-hero-image-mobile {
+        max-width: 320px;
+        margin: 0 auto -20px auto;
+        padding-top: 90px;
+    }
+   
+    .hero-mobile-heading {
+        font-size: 18px;
+    }
+
+    .hero-mobile-text {
+        padding-top: 30px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .dancebiz-hero-image-mobile, .hero-mobile-heading, .hero-mobile-text {
+        display: none;
+    }
+
+    .hero-md-styles {
+        display: block;
+    }
+
+    .dancebiz-hero-image {
+        padding-top: 70px;
+        max-width: 100%;
+    }
+
+    .main-headline-hero {
+        font-size: 28px;
+        line-height: 36px;
+        padding-top: 75px;
+        font-family: 'Open Sans', sans-serif;
+    }
+
+    .intro-paragraph {
+        padding-top: 40px;
+    }
+
+}
+
+@media screen and (min-width: 992px) {
+    .main-headline-hero {
+        font-size: 30px;
+        line-height: 33px;
+        padding-top: 105px;
+    }
+
+    .intro-paragraph {
+        padding-top: 55px;
+    }
+
+}
+
+/* hero background styles (the gradient) */
+.hero-container:after {
+    background: #e566bd;
+    background: -moz-radial-gradient(center, ellipse cover, #e566bd 0%, #810f57 100%);
+    background: -webkit-radial-gradient(center, ellipse cover, #e566bd 0%, #810f57 100%);
+    background: radial-gradient(ellipse at center, #e566bd 0%, #810f57 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e566bd', endColorstr='#810f57', GradientType=1);
+    top: 0;
+    width: 100%;
+    content: "";
+    position: absolute;
+    z-index: -3;
+    
+}
+
+.hero-container:before {
+    background: -moz-radial-gradient(center, ellipse cover, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.3) 100%);
+    background: -webkit-radial-gradient(center, ellipse cover, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.3) 100%);
+    background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.3) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#a6000000', GradientType=1);
+    top: 0;
+    width: 100%;
+    content: "";
+    position: absolute;
+    z-index: -2;
+    border-bottom: 15px solid #e566bd
+}
+
+.hero-container:before, .hero-container:after {
+    height: 410px;
+} 
+
+@media screen and (min-width: 575px) {
+    .hero-container:before, .hero-container:after {
+        height: 405px;
+    } 
+}
+
+@media screen and (min-device-width: 576px) and (max-device-width: 767px) { 
+    .hero-container:before, .hero-container:after {
+        height: 390px;
+    } 
+}
+
+
+@media screen and (min-width: 768px) {
+    .hero-container:before, .hero-container:after {
+        height: 240px;
+    } 
+}
+
+@media screen and (min-width: 992px) {
+    .hero-container:before, .hero-container:after {
+        height: 260px;
+    }
+    
+    .intro-paragraph {
+        padding-top: 70px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .hero-container:before, .hero-container:after {
+        height: 270px;
+    }
+    
+    .intro-paragraph {
+        padding-top: 80px;
+    }
+}
+
+@media only screen and (min-width:825px) and (max-width:991px) { 
+    /* CSS rules here */
+    .main-headline-hero {
+        padding-top: 100px;
+        padding-bottom: 15px;
+    }
+}

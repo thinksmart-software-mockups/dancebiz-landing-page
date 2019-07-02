@@ -1,0 +1,403 @@
+@import "base-styles.css";
+@import "hero-section.css";
+@import "carousel-styles.css";
+@import "client-logo-styles.css";
+
+
+/* navigation and logo section */
+.navbar {
+    /* height: 65px; */
+    background-color: rgba(67, 3, 48, .9);
+}
+
+@media screen and (min-width: 992px) {
+    .navbar {
+        background-color: rgba(67, 3, 48);
+    }
+}
+
+
+.logo-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo-icon {
+    height: 55px;
+}
+
+@media screen and (min-width: 992px) {
+    .logo-icon {
+        height: 60px;
+    }
+}
+
+
+.logo-type-styles {
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    position: relative;
+    top: 3px;
+}
+
+/* adding custom styling for the cta buttons*/
+.cta-button-styles {
+    font-size: 14px;
+    background-color: #5fcf80;
+    box-shadow: 0px 4px 0px #53b46f;
+}
+
+@media screen and (min-width: 992px) {
+    .cta-button-styles {
+        font-size: 16px;
+    }
+}
+
+.trial-button-styles:hover {
+    text-decoration: none;
+}
+
+/*******************************************************************/
+/* features section */
+.features-container {
+    list-style-type: none;
+}
+
+.features-container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media screen and (max-width: 575px) {
+    .features-container {
+        font-size: 15px;
+    }
+}
+
+@media screen and (min-width: 576px) {
+    .features-container {
+        width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .features-container {
+        margin-left: 70px;
+    }
+}
+
+.calendar_clock:before, 
+.checks:before, 
+.mail:before, 
+.documents_empty:before, 
+.nav_refresh:before,
+.mobilephone3:before, 
+.users:before, 
+.clipboard:before, 
+.cashier:before, 
+.hourglass:before,
+.user_smartphone:before, 
+.plus:before {
+    content: "";
+    display: inline-block;
+    background-size: 28px 28px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 30px;
+    width: 30px;
+    margin-left: -30px;
+    margin-top: 5px;
+    opacity: .5;
+}
+
+.list-styles {
+    position: relative;
+    top: -9px;
+    left: 5px;
+}
+
+.calendar_clock:before {
+    background-image: url('../assets/imgs/icons/calendar_clock.png');
+}
+
+.checks:before {
+    background-image: url('../assets/imgs/icons/checks.png');
+}
+
+.mail:before {
+    background-image: url('../assets/imgs/icons/mail.png');
+}
+
+.documents_empty:before {
+    background-image: url('../assets/imgs/icons/documents_empty.png');
+}
+
+.nav_refresh:before {
+    background-image: url('../assets/imgs/icons/nav_refresh.png');
+}
+
+.users:before {
+    background-image: url('../assets/imgs/icons/users.png');
+}
+
+.clipboard:before {
+    background-image: url('../assets/imgs/icons/clipboard.png');
+}
+
+.cashier:before {
+    background-image: url('../assets/imgs/icons/cashier.png');
+}
+
+.hourglass:before {
+    background-image: url('../assets/imgs/icons/hourglass.png');
+}
+
+.user_smartphone:before {
+    background-image: url('../assets/imgs/icons/user_smartphone.png');
+}
+
+.plus:before {
+    background-image: url('../assets/imgs/icons/plus.png');
+}
+
+.mobilephone3:before {
+    background-image: url('../assets/imgs/icons/mobilephone3.png');
+}
+
+/* benefits and testimonial styles */
+.benefits-container {
+    list-style-type: none;
+}
+
+.benefits-styles {
+    position: relative;
+    top: -8px;
+    left: 5px;
+}
+
+.caption-styles {
+    font-size: 14px;
+}
+
+
+@media screen and (min-width: 576px) {
+    .benefits-container {
+        columns: 2;
+    }
+}
+
+.ok:before {
+    background-image: url('../assets/imgs/icons/benefits/ok.png');
+}
+
+.ok:before {
+    content: "";
+    display: inline-block;
+    background-size: 28px 28px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 30px;
+    width: 30px;
+    margin-left: -30px;
+    margin-top: 5px;
+    /* opacity: .5; */
+}
+
+/* client logo section */
+.client-logo {
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* sign up form styles */
+
+/* ballerina image*/
+.ballerina-image {
+    content: "";
+    position: absolute;
+    background-image: url('../assets/imgs/ballerina-cropped.png');
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 200px;
+    width: 200px;
+    display: block;
+    z-index: 100;
+    bottom: 0; 
+    left: 0;
+}
+
+.ballerina {
+    position: absolute;
+    /* top: -40px; */
+    /* left: 10px; */
+    top: 25px;
+    left: 0;
+    height: 785px;
+    width: auto;
+    /* background-color: red; */
+}
+
+@media screen and (min-width: 1200px) {
+    .ballerina {
+        top: 50px;
+        left: 70px;
+        max-height: 750px;
+        /* margin: 0 auto 0 auto; */
+    }
+}
+
+.form-signup-headline-desktop {
+    display: none;
+}
+
+.colored-link{
+    color: #e566bd;
+}
+
+@media screen and (max-width: 768px) {
+    .form-fields-styles {
+        padding: 0;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .form-signup-headline-desktop {
+        display: block;
+        /* padding: 175px 50px 0 0; */
+        background: -moz-linear-gradient(45deg, rgba(96, 3, 75, 1) 1%, rgba(97, 3, 75, 1) 4%, rgba(114, 9, 81, 0.25) 55%, rgba(129, 15, 87, 0.25) 100%);
+        /* FF3.6-15 */
+        background: -webkit-linear-gradient(45deg, rgba(96, 3, 75, 1) 1%, rgba(97, 3, 75, 1) 4%, rgba(114, 9, 81, 0.25) 55%, rgba(129, 15, 87, 0.25) 100%);
+        /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(45deg, rgba(96, 3, 75, 1) 1%, rgba(97, 3, 75, 1) 4%, rgba(114, 9, 81, 0.25) 55%, rgba(129, 15, 87, 0.25) 100%);
+        /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#60034b', endColorstr='#40810f57', GradientType=1);
+        /* IE6-9 fallback on horizontal gradient */
+        background-color: #810f57;
+        border-right: solid 10px #e566bd;
+    }
+
+    .form-headline-desktop-styles {
+        /* font-weight: 700; */
+        font-size: 75px;
+        line-height: 1;
+        font-family: 'Open Sans';
+    }
+
+    .form-heading-styles {
+        /* background-color: #53b46f; */
+        padding: 175px 50px 0 0;
+    }
+}
+
+
+@media screen and (min-width: 768px) {
+    .form-container-styles {
+        -webkit-box-shadow: 0px 0px 15px 0px rgba(168, 168, 168, 1);
+        -moz-box-shadow: 0px 0px 15px 0px rgba(168, 168, 168, 1);
+        box-shadow: 0px 0px 15px 0px rgba(168, 168, 168, 1);
+        max-width: 90%;
+    }
+
+    .form-fields-styles {
+        max-width: 80%;
+        margin: auto;
+    }
+}
+
+@media screen and (min-width: 992px) {
+
+    .form-container-styles {
+        max-width: 1140px;
+    }
+    .form-fields-styles {
+        max-width: 420px;
+        margin: auto;
+
+    }
+}
+
+/* footer section */
+@media screen and (max-width: 575px) {
+    .footer-mobile {
+        display: block;
+    }
+
+    .footer-desktop {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 576px) {
+    .footer-mobile {
+        display: none;
+    }
+
+    .footer-desktop {
+        display: block;
+    }
+}
+
+.footer-items-container {
+    max-width: 960px;
+}
+
+footer {
+    font-size: 14px;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#810f57+0,e566bd+100 */
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#380630+0,810f57+17,e566bd+47,810f57+73,380630+100&1+0,0.42+47,1+100 */
+    background: -moz-linear-gradient(45deg, rgba(56, 6, 48, 1) 0%, rgba(129, 15, 87, 0.79) 17%, rgba(229, 102, 189, 0.42) 47%, rgba(129, 15, 87, 0.7) 73%, rgba(56, 6, 48, .7) 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(45deg, rgba(56, 6, 48, 1) 0%, rgba(129, 15, 87, 0.79) 17%, rgba(229, 102, 189, 0.42) 47%, rgba(129, 15, 87, 0.7) 73%, rgba(56, 6, 48, .7) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(45deg, rgba(56, 6, 48, 1) 0%, rgba(129, 15, 87, 0.79) 17%, rgba(229, 102, 189, 0.42) 47%, rgba(129, 15, 87, 0.7) 73%, rgba(56, 6, 48, .7) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#380630', endColorstr='#380630', GradientType=1);
+    /* IE6-9 fallback on horizontal gradient */
+    background-color: #810f57;
+}
+
+.footer-border-top {
+    border-top: 10px solid #e566bd;
+}
+
+/* testimonial colors */
+.testimonial-bg {
+    /* background-color: rgb(255,105,180, .1); */
+    /* background-color: rgb(255,105,180); */
+    background-color: #810f57;
+
+}
+
+/* .fa-chevron-left,  .fa-chevron-right {
+    background-color: red;
+    display: none;
+} */
+
+.carousel-control-next-icon:before, .carousel-control-prev-icon:before {
+    color: #fff;
+}
+
+.carousel-indicators .active {
+    background-color: #e566bd;
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    display: none;
+}
+
+/* .baguetteBox-button {
+    background-color: inherit !important;
+} */
+
+/* .baguetteBox-button#previous-button {
+    background-color:#e2e2e2 !important;
+    box-shadow: 0px 1px 4px #53b46f;
+} */
+
+

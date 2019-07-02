@@ -1,0 +1,46 @@
+.client-logo-styles {
+
+}
+
+
+@media screen and (min-width: 411px) {
+    .client-logo-styles {
+        /* max-width: 200px;375
+         */
+    }
+}
+
+
+@media screen and (max-width: 575px) {
+    .client-logo-styles {
+        
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .client-logo-container {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .client-logo-container {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .client-logo-square-styles {
+        max-width: 160px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .client-logo-container {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
